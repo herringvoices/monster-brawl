@@ -1,3 +1,69 @@
+// Custom theme variables - must be defined BEFORE Bootstrap import
+// Colors
+$primary: #6a4e93; // Purple
+$secondary: #8b7f9c; // Muted purple
+$success: #2e8b57; // Sea green
+$info: #5bc0de; // Light blue
+$warning: #f0ad4e; // Amber
+$danger: #d9534f; // Red
+$light: #f0f0f0; // Off white
+$dark: #343a40; // Dark gray
+
+// Additional custom colors
+$hero-accent: #775e4f; // Hero accent color
+$hero-dark: #4b3d32; // Hero dark color
+$hero-light: #d7c9b2; // Hero light color
+$monster-accent: #757575; // Monster accent color
+$monster-dark: #424242; // Monster dark color
+$monster-darkest: #212121; // Monster darkest color
+$monster-light: #dbdbdb; // Monster light color
+$action-accent: #8b7f9c; // Action accent color - light purple
+$action-light: #f0e6ff; // Action light color - very light purple
+
+// Add all colors to Bootstrap's theme-colors map
+// This will automatically generate utility classes like .bg-brown, .text-gold, etc.
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "hero-accent": $hero-accent,
+  "hero-dark": $hero-dark,
+  "hero-light": $hero-light,
+  "monster-accent": $monster-accent,
+  "monster-dark": $monster-dark,
+  "monster-darkest": $monster-darkest,
+  "monster-light": $monster-light,
+  "action-accent": $action-accent,
+  "action-light": $action-light,
+);
+
+// Customize other Bootstrap variables
+$body-bg: #f5f5f5;
+$body-color: #333;
+$border-radius: 0.375rem;
+$border-radius-lg: 0.5rem;
+$border-radius-sm: 0.25rem;
+
+// Card customization
+$card-border-width: 2px;
+$card-border-color: rgba(0, 0, 0, 0.175);
+$card-cap-bg: rgba(0, 0, 0, 0.03);
+
+// Button customization
+$btn-font-weight: 600;
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1rem;
+
+// Typography
+$font-family-base: "Roboto", "Segoe UI", system-ui, -apple-system, sans-serif;
+$headings-font-weight: 700;
+
+// After custom variables, import Bootstrap
 @import "bootstrap/scss/bootstrap";
 
-// your global styles here…
+// Additional global styles can be added below

@@ -1,0 +1,21 @@
+Here are the cards in the 30 card Action deck. Heroes and Monsters will both have identical action decks. They will use one card each on their turn, using the corresponding action.
+
+---
+
+- **Attack** ×10  
+  - Roll 0 to attack range. Deal that much damage.
+
+- **Defend** ×7  
+  - Roll 0 to attack range. Block that much damage on the next enemy turn.
+
+- **Health Potion** ×4  
+  - Heal 0–6 HP (randomized).
+
+- **Use Special 1** ×5  
+  - Invoke the first special ability of the character playing the card.
+
+- **Use Special 2** ×4  
+  - Invoke the second special ability of the character playing the card.
+
+---
+

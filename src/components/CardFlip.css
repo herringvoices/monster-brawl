@@ -1,0 +1,156 @@
+/* Card flip animation */
+.flip-card {
+  perspective: 50em;
+  width: 18rem;
+  height: 32rem;
+  position: relative;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.flip-card-inner.hero {
+  outline: var(--bs-hero-dark) solid 6px;
+  border-radius: 0.25rem;
+}
+.flip-card-inner.monster {
+  outline: var(--bs-monster-darkest) solid 6px;
+  border-radius: 0.25rem;
+}
+.flip-card-inner.action {
+  outline: var(--bs-light) solid 6px;
+  border-radius: 0.25rem;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #f8f9fa;
+}
+
+/* Add a subtle hover effect */
+.flip-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Style for card elements */
+.flip-card .card {
+  height: 100%;
+}
+
+.flip-card .card-header {
+  padding: 0.5rem;
+  background-color: var(--bs-hero-light) !important;
+}
+
+.card-header.hero {
+  background-color: var(--bs-hero-light) !important;
+}
+.card-header.monster {
+  background-color: var(--bs-monster-dark) !important;
+  color: var(--bs-light);
+}
+
+.flip-card .card-img-container {
+  width: 100%;
+  height: 55%;
+}
+
+.flip-card .card-img-top {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+  background-color: #000;
+}
+
+.card-img-top.hero {
+  background-color: var(--bs-hero-accent);
+}
+
+.card-img-top.monster {
+  background-color: var(--bs-monster-accent);
+}
+
+/* Add more space for the card body */
+.flip-card .card-body {
+  height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: auto; Allow scrolling if text is too long */
+}
+
+/* Better text formatting in the card body */
+.flip-card .card-text {
+  font-size: 0.95rem;
+}
+
+/* List group styles to fill available space */
+.flip-card .list-group {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.flip-card .list-group-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  border-radius: 0;
+  border: 0;
+}
+
+.list-group-item.hero {
+  outline: var(--bs-hero-dark) solid 3px;
+  background-color: var(--bs-hero-light);
+}
+
+.list-group-item.monster {
+  outline: var(--bs-monster-light) solid 3px;
+  background-color: var(--bs-monster-dark);
+  color: var(--bs-light);
+}
+
+.card-img-top,
+.card-header,
+.card-body,
+.card-list {
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
+.card {
+  border-radius: 0 !important;
+  border: 0 !important;
+}

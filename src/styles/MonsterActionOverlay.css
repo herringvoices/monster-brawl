@@ -1,0 +1,55 @@
+.monster-action-overlay .modal-content {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  border: 3px solid var(--bs-monster-dark);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.monster-action-overlay .modal-header {
+  border-bottom: 2px solid var(--bs-monster-dark);
+  background-color: var(--bs-monster-darkest);
+  display: flex;
+  justify-content: center;
+}
+
+.monster-action-overlay .modal-header h3 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #ff6b6b;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+}
+
+.monster-action-overlay .modal-body {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monster-card-container {
+  transform-origin: center;
+  animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

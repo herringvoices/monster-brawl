@@ -1,0 +1,19 @@
+- **Wolf** (Max HP: 18; Basic Attack: 0 – 6)  
+  - **Special 1 [Pack Tactics]:** Roll 0 – 6 twice; sum (0 – 12)  
+  - **Special 2 [Pounce]:** 80% chance to deal 9 damage; 20% chance to miss  
+
+- **Snake** (Max HP: 18; Basic Attack: 0 – 8)  
+  - **Special 1 [Venom Strike]:** Deal 6 damage and heal 3 HP  
+  - **Special 2 [Constrict]:** Roll 0 – 8 and add 2 damage (2 – 10)  
+
+- **Hawk** (Max HP: 16; Basic Attack: 0 – 8)  
+  - **Special 1 [Talon Dive]:** 70% chance to deal 12 damage; 30% chance to miss  
+  - **Special 2 [Skystrike]:** Roll 0 – 4 three times; sum (0 – 12)  
+
+- **Bear** (Max HP: 26; Basic Attack: 0 – 10)  
+  - **Special 1 [Maul]:** Roll 0 – 10 and add 2 damage (2 – 12)  
+  - **Special 2 [Crushing Swipe]:** Deal flat 8 damage  
+
+- **Owl** (Max HP: 22; Basic Attack: 0 – 6)  
+  - **Special 1 [Night Ambush]:** Deal 5 damage, then roll 0 – 5 for extra (5 – 10)  
+  - **Special 2 [Silent Talons]:** 75% chance to deal 10 damage; 25% chance to miss  

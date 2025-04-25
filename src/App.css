@@ -5,38 +5,125 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #56754a;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
 }
 
-@keyframes logo-spin {
+.action-card-bar {
+  background-color: #272217;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
+
+/* Game Intro Styling */
+.game-intro-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3a4e33;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.game-intro-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.game-intro-card .card-header {
+  background-color: var(--bs-hero-dark) !important;
+  border-bottom: 4px solid var(--bs-hero-accent);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.game-intro-card ol li {
+  margin-bottom: 0.5rem;
+}
+
+.game-intro-card .btn-primary {
+  background-color: var(--bs-hero-dark);
+  border-color: var(--bs-hero-accent);
+  transition: all 0.3s ease;
+}
+
+.game-intro-card .btn-primary:hover {
+  background-color: var(--bs-hero-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Choice Styling */
+.hero-choice-container {
+  background-color: #2b3a25;
+  background-image: radial-gradient(
+      circle at center,
+      rgba(100, 150, 100, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://www.transparenttextures.com/patterns/dark-wood.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hero-choice-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #6a4e93, 0 0 20px #6a4e93;
   }
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 10px #fff, 0 0 15px #8b7f9c, 0 0 20px #8b7f9c,
+      0 0 25px #8b7f9c;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero-card-container {
+  cursor: pointer;
+  position: relative;
 }
 
-.card {
-  padding: 2em;
+.hero-card-container:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.hero-card-container::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hero-card-container:hover::after {
+  opacity: 1;
 }

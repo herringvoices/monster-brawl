@@ -1,0 +1,35 @@
+- **Fighter** (Max HP: 28; Basic Attack: 0–10)  
+  - **Special 1 [Shield Slam]:** Deal 4 damage and reduce your next incoming damage by half  
+  - **Special 2 [Power Strike]:** Roll 0–10 and add 2 damage  
+
+- **Barbarian** (Max HP: 30; Basic Attack: 0–10)  
+  - **Special 1 [Blood Sacrifice]:** Lose 5 HP; deal 16 damage  
+  - **Special 2 [Berserker Fury]:** 70% chance to deal 14; 20% chance to do nothing; 10% chance to self‑damage 7  
+
+- **Paladin** (Max HP: 26; Basic Attack: 0–8)  
+  - **Special 1 [Divine Smite]:** Roll 0–8 and add 4 damage  
+  - **Special 2 [Lay on Hands]:** Heal 10 HP  
+
+- **Archer** (Max HP: 22; Basic Attack: 0–8)  
+  - **Special 1 [Piercing Shot]:** Roll 0–8 and add 4 damage  
+  - **Special 2 [Volley]:** Roll 0–4 three times; sum for total damage (0–12)  
+
+- **Rogue** (Max HP: 18; Basic Attack: 0–8)  
+  - **Special 1 [Assassinate]:** 70% chance to deal 12 damage; 30% chance to miss  
+  - **Special 2 [Double Stab]:** Roll 0–8 twice; add both results  
+
+- **Monk** (Max HP: 24; Basic Attack: 0–6)  
+  - **Special 1 [Flurry of Blows]:** Roll Basic Attack three times; take the highest result  
+  - **Special 2 [Inner Peace]:** Deal 6 damage and heal 6 HP  
+
+- **Mage** (Max HP: 16; Basic Attack: 0–6)  
+  - **Special 1 [Fireball]:** 60% chance to deal 14 damage; 40% chance to fizzle (0)  
+  - **Special 2 [Arcane Blast]:** Roll 0–12 and add 2 damage (2–14)  
+
+- **Necromancer** (Max HP: 18; Basic Attack: 0–6)  
+  - **Special 1 [Life Drain]:** Deal 8 damage and heal 4 HP  
+  - **Special 2 [Dark Ritual]:** Flip a coin—heads deal 14 damage; tails heal 7 HP  
+
+- **Healer** (Max HP: 20; Basic Attack: 0–4)  
+  - **Special 1 [Rejuvenation]:** Heal 12 HP  
+  - **Special 2 [Soothing Rain]:** Roll 0–8 and add 2; heal that amount (2–10)  
