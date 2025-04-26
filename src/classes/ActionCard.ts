@@ -1,11 +1,8 @@
 // ----------------------------------------------------------------------------
-// 3) Concrete class: holds our effect and can be extended if needed
+// Concrete class: holds our effect and can be extended if needed
 // ----------------------------------------------------------------------------
-import { ActionEffect, IActionCard } from "./actionTypes";
-import {
-  CharacterCard,
-  EffectResult,
-} from "../../components/game/cards/CharacterCard";
+import { ActionEffect, IActionCard } from "../interfaces/IActionCard";
+import { CharacterCard, EffectResult } from "./CharacterCard";
 
 export class ActionCard implements IActionCard {
   public name: string;

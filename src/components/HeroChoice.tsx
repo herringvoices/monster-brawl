@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CharacterCard from "./CharacterCard";
-import { HeroCard } from "./game/cards/HeroCard";
-import { getHeroDeck } from "../game/cards/heroCards";
-import "./CardFlip.css";
+import { HeroCard } from "../classes/HeroCard";
+import { getHeroDeck } from "../classes/heroCards";
+import "../styles/CardFlip.css";
 
 interface HeroChoiceProps {
   onHeroSelected: (hero: HeroCard) => void;

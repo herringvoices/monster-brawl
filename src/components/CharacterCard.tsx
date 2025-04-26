@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Card, Row, Col, ListGroup, ProgressBar } from "react-bootstrap";
-import { CharacterCard as CharacterCardModel } from "../components/game/cards/CharacterCard";
+import { CharacterCard as CharacterCardModel } from "../classes/CharacterCard";
 import EffectOverlay, { EffectType } from "./EffectOverlay";
-import "./CardFlip.css";
+import "../styles/CardFlip.css";
 
 export interface EffectMessage {
   message: string;

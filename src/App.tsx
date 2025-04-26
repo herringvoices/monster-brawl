@@ -3,13 +3,13 @@ import GameIntro from "./components/GameIntro";
 import HeroChoice from "./components/HeroChoice";
 import GameBoard from "./components/GameBoard";
 import MonsterActionOverlay from "./components/MonsterActionOverlay";
-import { HeroCard } from "./components/game/cards/HeroCard";
-import { MonsterCard } from "./components/game/cards/MonsterCard";
-import { ActionCard } from "./game/cards/ActionCard";
-import { getMonsterDeck } from "./game/cards/monsterCards";
-import { buildStandardActionDeck } from "./game/cards/ActionCardFactory";
+import { HeroCard } from "./classes/HeroCard";
+import { MonsterCard } from "./classes/MonsterCard";
+import { ActionCard } from "./classes/ActionCard";
+import { getMonsterDeck } from "./classes/monsterCards";
+import { buildStandardActionDeck } from "./classes/ActionCardFactory";
 import { EffectMessage } from "./components/CharacterCard";
-import { EffectResult } from "./components/game/cards/CharacterCard";
+import { EffectResult } from "./classes/CharacterCard";
 import "./App.css";
 
 // Turn state type definition
@@ -177,8 +177,6 @@ function App() {
 
     // Move the card to monster's discard pile (we just remove it now)
     setMonsterDeck((prev) => prev.filter((c) => c !== card));
-
-
   }, []);
 
   // Effect to handle turn state transitions

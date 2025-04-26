@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Modal } from "react-bootstrap";
 import ActionCard from "./ActionCard";
-import { ActionCard as ActionCardModel } from "../game/cards/ActionCard";
+import { ActionCard as ActionCardModel } from "../classes/ActionCard";
 import "../styles/MonsterActionOverlay.css";
 
 interface MonsterActionOverlayProps {

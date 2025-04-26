@@ -1,16 +1,7 @@
-// ----------------------------------------------------------------------------
-// 1) Define the signature for any special‑ability function:
-//    it takes the user (the card playing it) and the target, and returns void
-// ----------------------------------------------------------------------------
-import { CharacterCard } from "./CharacterCard";
-
-export type SpecialAbilityFn = (
-  user: CharacterCard,
-  target: CharacterCard
-) => void;
+import { SpecialAbilityFn } from "./SpecialAbilityFn";
 
 // ----------------------------------------------------------------------------
-// 2) Interface: describes the "shape" of any card (hero or monster)
+// Interface: describes the "shape" of any card (hero or monster)
 // ----------------------------------------------------------------------------
 export interface ICharacterCard {
   /** Card's name (e.g. "Fighter", "Wolf") */

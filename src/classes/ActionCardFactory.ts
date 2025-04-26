@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------------
-// 4) Examples: building the standard 30‑card action deck
+// Examples: building the standard 30‑card action deck
 // ----------------------------------------------------------------------------
 import { ActionCard } from "./ActionCard";
-import { EffectResult } from "../../components/game/cards/CharacterCard";
+import { EffectResult } from "./CharacterCard";
 
 // 4.1) Attack card: roll user.attackRange, deal that much to target
 export const makeAttackCard = () =>

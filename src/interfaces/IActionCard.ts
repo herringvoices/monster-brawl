@@ -1,20 +1,17 @@
-// ----------------------------------------------------------------------------
-// 1) Re‑alias our special‑ability signature for clarity on actions
-// ----------------------------------------------------------------------------
-import { SpecialAbilityFn } from "../../components/game/cards/types";
-import {
-  CharacterCard,
-  EffectResult,
-} from "../../components/game/cards/CharacterCard";
+import { CharacterCard } from "../classes/CharacterCard";
+import { EffectResult } from "../classes/CharacterCard";
 
+// ----------------------------------------------------------------------------
+// Re‑alias our special‑ability signature (change its name) from
+// SpecialAbilityFn to ActionEffect for clarity in the context of action cards
+// ----------------------------------------------------------------------------
 export type ActionEffect = (
   user: CharacterCard,
   target: CharacterCard
 ) => EffectResult;
-// (i.e. (user: CharacterCard, target: CharacterCard) => EffectResult)
 
 // ----------------------------------------------------------------------------
-// 2) Interface: what every action card must have
+// Interface: what every action card must have
 // ----------------------------------------------------------------------------
 export interface IActionCard {
   /** The card's display name (e.g. "Attack", "Defend", "Health Potion") */
@@ -30,4 +27,7 @@ export interface IActionCard {
 
   /** Optional note for students / UI display */
   description?: string;
+
+  /** Path to the card's image */
+  imagePath: string;
 }

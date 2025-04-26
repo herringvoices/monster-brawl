@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import CharacterCard, { EffectMessage } from "./CharacterCard";
 import ActionCardBar from "./ActionCardBar";
-import { HeroCard } from "./game/cards/HeroCard";
-import { MonsterCard } from "./game/cards/MonsterCard";
-import { ActionCard } from "../game/cards/ActionCard";
+import { HeroCard } from "../classes/HeroCard";
+import { MonsterCard } from "../classes/MonsterCard";
+import { ActionCard } from "../classes/ActionCard";
 
 // Import turn state type from App (or create a shared types file)
 type TurnState =

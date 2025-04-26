@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
-import { ActionCard as ActionCardModel } from "../game/cards/ActionCard";
+import { ActionCard as ActionCardModel } from "../classes/ActionCard";
 import ActionCardComponent from "./ActionCard";
-import "./CardFlip.css";
+import "../styles/CardFlip.css";
 
 interface ActionCardBarProps {
   handCards: ActionCardModel[];

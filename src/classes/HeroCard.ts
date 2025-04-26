@@ -1,10 +1,10 @@
 // ----------------------------------------------------------------------------
-// 5) MonsterCard: for all monsters
+// HeroCard: for all heroes
 // ----------------------------------------------------------------------------
 import { CharacterCard } from "./CharacterCard";
-import { SpecialAbilityFn } from "./types";
+import { SpecialAbilityFn } from "../interfaces/SpecialAbilityFn";
 
-export class MonsterCard extends CharacterCard {
+export class HeroCard extends CharacterCard {
   constructor(
     name: string,
     maxHealth: number,
@@ -23,5 +23,5 @@ export class MonsterCard extends CharacterCard {
     );
   }
 
-  // You can add monster‑only methods here later
+  // You can add hero‑only methods here later
 }

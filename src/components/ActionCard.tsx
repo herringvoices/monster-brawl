@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
-import { ActionCard as ActionCardModel } from "../game/cards/ActionCard";
-import "./CardFlip.css";
+import { ActionCard as ActionCardModel } from "../classes/ActionCard";
+import "../styles/CardFlip.css";
 
 type ActionCardProps = {
   card: ActionCardModel;

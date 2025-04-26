@@ -1,7 +1,8 @@
 // ----------------------------------------------------------------------------
-// 3) Abstract base class: shared logic for heroes & monsters
+// Abstract base class: shared logic for heroes & monsters
 // ----------------------------------------------------------------------------
-import { ICharacterCard, SpecialAbilityFn } from "./types";
+import { ICharacterCard } from "../interfaces/ICharacterCard";
+import { SpecialAbilityFn } from "../interfaces/SpecialAbilityFn";
 
 export interface EffectResult {
   effectType: "damage" | "heal" | "defense";
